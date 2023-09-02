@@ -1,0 +1,46 @@
+
+
+Atenção: 
+Se o titulo da feature tiver a mesma palavra irá prevalecer a feature toda.
+
+Não usar aspas simples, por exemplo 'smoke test', usar apenas smoke test.
+Se usar uma palavra chave (no grep) não for encontrada, então o report não será gerado resultando em erro no cypress.
+
+--record --key 66387b52-e64b-43de-8a6b-3e8ff47bfbf5
+
+************
+
+Rodar CENÁRIOS com base em uma palavra chave no título
+
+grepFilterSpecs: true 
+cypress run --spec 'cypress/e2e/spec/exemplo/' --headless --browser chrome --env grep=titulo
+
+************
+
+Rodar CENÁRIOS com base em uma ou outra palavra chave no título
+"cy:run-exemplo-regressao": "cypress run --spec 'cypress/e2e/spec/exemplo/' --headless --browser chrome --env grep=regressão;movimentação",
+
+Rodar CENÁRIOS passando palavras chaves fora do aliás
+"cy:run-exemplo-regressao": "cypress run --spec 'cypress/e2e/spec/exemplo/' --headless --browser chrome ---env"
+npm run cy:run-exemplo-regressao grep="regressão; movimentação"
+
+************
+
+Rodar com base em uma palavra chave OU outra
+--env grep="hello; auth user"
+
+
+************
+
+Para tentar colocar a chave do dashboard do cypress em uma variável "ENV"
+CYPRESS_RECORD_KEY: "xxxx"
+
+
+# enable the tests with string "one two" in their titles
+--env grep="one two"
+# enable the tests with tag "one" or "two"
+--env grepTags="one two"
+# enable the tests with both tags "one" and "two"
+--env grepTags="one+two"
+# enable the tests with "hello" in the title and tag "smoke"
+--env grep=hello,grepTags=smoke

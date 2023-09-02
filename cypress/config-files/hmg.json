@@ -1,0 +1,16 @@
+{
+    "env": {
+        "global_timeout": 10000,
+        "MockRequest": false,
+    
+        "exemplo": "https://barrigareact.wcaquino.me",
+        "exemplo_backend": "https://barrigarest.wcaquino.me",
+
+        "users": {
+            "exemplo": {
+                "email":"caio@caio", 
+                "senha":"123"
+            }
+        }
+    } 
+}
