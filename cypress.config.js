@@ -8,7 +8,7 @@ module.exports = defineConfig({
   numTestsKeptInMemory: 500,
   screenshotsFolder: 'cypress/reports/screenshots',
   'cucumberautocomplete.strictGherkinCompletion': true,
-  video: true,
+  video: false,
   modifyObstructiveCode: false,
   experimentalSourceRewriting: true,
   reporter: 'cypress-multi-reporters',

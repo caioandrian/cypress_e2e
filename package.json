@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open-hmg": "cypress open --env fileConfig=hmg",
+    "cy:open-hmg": "cypress open",
     "cy:open-pre": "cypress open --env fileConfig=pre",
 
     "cy:run-exemplo": "cypress run --spec 'cypress/e2e/spec/exemplo/' --browser chrome --headless",
     "cy:run-exemplo-regressao": "cypress run --spec 'cypress/e2e/spec/exemplo/' --browser chrome --headless --env grep=regressão",
 
-    "cy:run-all-chrome": "cypress run --browser chrome",
-    "cy:run-all-edge": "cypress run --browser edge",
-    "cy:run-all-firefox": "cypress run --browser firefox",
-    "cy:run-all-electron": "cypress run --browser electron",
+    "cy:run-all-chrome": "cypress run --browser chrome --headless",
+    "cy:run-all-edge": "cypress run --browser edge --headless",
+    "cy:run-all-firefox": "cypress run --browser firefox --headless",
+    "cy:run-all-electron": "cypress run --browser electron --headless",
     
     "cypress:verify": "cypress verify",
     "update-packages": "npx npm-check-updates"
