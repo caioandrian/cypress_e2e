@@ -6,7 +6,7 @@ Se o titulo da feature tiver a mesma palavra irá prevalecer a feature toda.
 Não usar aspas simples, por exemplo 'smoke test', usar apenas smoke test.
 Se usar uma palavra chave (no grep) não for encontrada, então o report não será gerado resultando em erro no cypress.
 
---record --key 66387b52-e64b-43de-8a6b-3e8ff47bfbf5
+--record --key xxxx-xxxx-xxxx-xxxx-xxxxxx
 
 ************
 
