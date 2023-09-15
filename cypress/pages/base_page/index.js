@@ -98,7 +98,7 @@ export default class Base {
     }
 
     static getElementFilterVisible(elementID, index = undefined, scroll = undefined){
-        return cy.get(elementID, index, scroll, { timeout: Cypress.env('global_timeout') }).filter(':visible').scrollIntoView()
+        return cy.get(elementID, scroll, { timeout: Cypress.env('global_timeout') }).filter(':visible').eq(index).scrollIntoView()
     }
 
     /*static getElementTextFilterVisible(elementID, index = 0){
