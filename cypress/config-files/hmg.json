@@ -5,7 +5,8 @@
     
         "exemplo": "https://barrigareact.wcaquino.me",
         "exemplo_backend": "https://barrigarest.wcaquino.me",
-
+        "agi_frontend": "https://blogdoagi.com.br",
+        
         "users": {
             "exemplo": {
                 "email":"caio@caio", 
